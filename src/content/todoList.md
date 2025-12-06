@@ -39,3 +39,6 @@ aplikasi ini di buat menggunakan library react sederhana dengan 4 file jsx dan 1
 
 
 Aplikasi ini dibuat menggunakan library React dengan struktur yang sederhana. Terdapat 4 file JSX sebagai komponen utama dan 1 file utama yang berfungsi sebagai tempat untuk melakukan import. Selain itu, aplikasi ini juga menggunakan 2 file CSS untuk mengatur tampilan.
+
+link:
+https://github.com/reikatsura999-star/evaluasi-pekan1/tree/main/src/components

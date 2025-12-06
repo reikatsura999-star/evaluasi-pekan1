@@ -6,7 +6,7 @@ function TodoList({ todos, onToggle, onDelete }) {
         return (
             <div className="empty-state">
                 <div className="empty-state-icon">📋</div>
-                <p className="empty-state-text">Belum ada tugas. Yuk tambahkan sekarang!</p>
+                <p className="empty-state-text">Belum ada tugas. ayo tambahkan sekarang!</p>
             </div>
         );
     }
