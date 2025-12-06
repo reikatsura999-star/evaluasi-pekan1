@@ -1,0 +1,84 @@
+.todoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    margin-bottom: 0.75rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInUp 0.3s ease backwards;
+}
+
+.todoItem:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.todoContent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: var(--accent-primary);
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.checkbox:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    font-size: 1rem;
+    color: var(--text-primary);
+    transition: all 0.3s;
+    flex: 1;
+}
+
+.completed {
+    color: var(--text-muted);
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.deleteBtn {
+    background: transparent;
+    border: none;
+    color: var(--accent-danger);
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 1.25rem;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoItem:hover .deleteBtn {
+    opacity: 0.7;
+}
+
+.deleteBtn:hover {
+    opacity: 1 !important;
+    background: rgba(244, 63, 94, 0.15);
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(244, 63, 94, 0.4);
+}
+
+.deleteBtn:active {
+    transform: scale(0.95);
+}

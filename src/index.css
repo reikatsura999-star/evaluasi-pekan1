@@ -1,0 +1,97 @@
+:root {
+    /* Enhanced Color Palette - Premium Gradients */
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #1a1f35;
+    --accent-primary: #6366f1;
+    --accent-hover: #4f46e5;
+    --accent-danger: #f43f5e;
+    --accent-success: #10b981;
+
+    /* Gradient Colors */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-success: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --gradient-danger: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+    --gradient-cool: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+
+    /* Text Colors */
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+
+    /* Glassmorphism Variables */
+    --glass-bg: rgba(26, 31, 53, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    --glass-glow: 0 0 20px rgba(99, 102, 241, 0.3);
+
+    /* Spacing & Layout */
+    --radius-lg: 20px;
+    --radius-md: 12px;
+    --radius-sm: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-primary);
+    /* Animated Mesh Gradient Background */
+    background-image:
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.2) 0, transparent 50%),
+        radial-gradient(at 50% 0%, rgba(139, 92, 246, 0.15) 0, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(236, 72, 153, 0.2) 0, transparent 50%);
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+    color: var(--text-primary);
+    min-width: 320px;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    line-height: 1.6;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
