@@ -31,19 +31,6 @@
     width: 22px;
     height: 22px;
     cursor: pointer;
-    accent-color: var(--accent-primary);
-    border-radius: 4px;
-    transition: all 0.2s;
-}
-
-.checkbox:hover {
-    transform: scale(1.1);
-}
-
-.text {
-    font-size: 1rem;
-    color: var(--text-primary);
-    transition: all 0.3s;
     flex: 1;
 }
 
@@ -81,4 +68,16 @@
 
 .deleteBtn:active {
     transform: scale(0.95);
+}
+
+/* Touch Device Support */
+@media (hover: none) {
+    .deleteBtn {
+        opacity: 0.7;
+        /* Always visible on touch devices */
+    }
+
+    .deleteBtn:active {
+        opacity: 1;
+    }
 }

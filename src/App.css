@@ -136,3 +136,77 @@ h1 {
     font-size: 1.1rem;
     color: var(--text-secondary);
 }
+
+/* Responsive Design Media Queries */
+
+/* Tablet & Smaller Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .app-container {
+        max-width: 80%;
+        margin: 2rem auto;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .app-container {
+        max-width: 90%;
+        padding: 2rem;
+        margin: 1rem auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .todo-form {
+        gap: 0.5rem;
+    }
+
+    .todo-form button {
+        padding: 0.875rem 1.25rem;
+    }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .app-container {
+        max-width: 95%;
+        padding: 1.25rem;
+        margin: 0.5rem auto;
+        border-radius: var(--radius-md);
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .todo-form {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .todo-form button {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .todo-filter {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        flex: 1;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    /* Adjust input font size to prevent zoom on iOS */
+    .todo-form input {
+        font-size: 16px;
+    }
+}
