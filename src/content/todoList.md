@@ -24,7 +24,8 @@ Setelah tugas tidak lagi diperlukan, pengguna dapat menghapusnya dengan klik tan
 
 
 
---fitur yg suddah di terapkan--:
+--fitur yg suddah di terapkan--
+
 1.Menambah tugas baru dengan cepat dan otomatis tersimpan.
 
 2.Melihat semua tugas, tugas aktif, dan tugas yang sudah selesai.
